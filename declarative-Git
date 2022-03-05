@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+    stages{
+        stage("Gitcheckout"){
+            steps{
+             git credentialsId: 'github credentials', url: 'https://github.com/mdsameullah/GOOGLE2.git'   
+            }
+        }
+        
+    }
+}
